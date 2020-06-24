@@ -1,7 +1,7 @@
 html {
 	font-size: 16px;
 	background-color: #141414;
-	color: #F78300;
+	color: #625E5D;
 }
 .flex{
 	display: flex;
@@ -12,4 +12,7 @@ html {
 	width: 900px;
 	padding: 16px;
 	align-self: center;
+}
+:link{
+	color: #F78300;
 }
