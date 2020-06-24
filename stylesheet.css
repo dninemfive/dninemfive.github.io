@@ -13,6 +13,9 @@ html {
 	padding: 16px;
 	align-self: center;
 }
-:link{
+a:link{
 	color: #F78300;
+}
+a:visited{
+	color: #9F5400;
 }
