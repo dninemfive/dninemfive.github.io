@@ -3,3 +3,11 @@ html {
 	background-color: #141414;
 	color: #F78300
 }
+.flex{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.textBg{
+	background-color: #625E5D
+}
