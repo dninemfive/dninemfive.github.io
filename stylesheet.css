@@ -6,9 +6,10 @@ html {
 .flex{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	width: 900px;
+	justify-content: center;	
 }
 .textBg{
 	background-color: #625E5D
+	width: 900px;
+	padding: 16px;
 }
