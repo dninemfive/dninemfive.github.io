@@ -1,15 +1,20 @@
 html {
-	font-size: 16px;
+	font-size: 18px;
 	background-color: #141414;
 	color: #625E5D;
 	font-family: 'Vollkorn', serif;
+}
+.flex-header{
+	display: flex;
+	flex-direction: row;
+}
+div.button{
 }
 .flex{
 	display: flex;
 	flex-direction: column;
 }
 .flex > div{
-	/* background-color: #625E5D; // Looks better without this tbh */
 	width: 900px;
 	padding: 16px;
 	align-self: center;
@@ -21,5 +26,5 @@ a:visited{
 	color: #9F5400;
 }
 h1, h2{
-	font-family: 'Catamaran', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
