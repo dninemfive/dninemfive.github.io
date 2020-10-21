@@ -32,13 +32,13 @@ div.button:hover{
 }
 .flex{
 	display: flex;
-	flex-direction: column;
-	background-color: $med-gray;
+	flex-direction: column;	
 }
 .flex > div{
 	width: 900px;
 	padding: 16px;
 	align-self: center;
+	background-color: $med-gray;
 }
 a{
 	text-decoration: none;

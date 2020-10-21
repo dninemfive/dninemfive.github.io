@@ -34,13 +34,13 @@ div.button:hover {
 .flex {
   display: flex;
   flex-direction: column;
-  background-color: #3b3938;
 }
 
 .flex > div {
   width: 900px;
   padding: 16px;
   align-self: center;
+  background-color: #3b3938;
 }
 
 a {
