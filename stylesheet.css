@@ -38,7 +38,7 @@ div.button:hover {
   height: 100%;
 }
 
-.flex > div {
+.flex-body > div {
   width: 900px;
   padding: 16px;
   align-self: center;
