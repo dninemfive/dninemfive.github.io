@@ -44,7 +44,7 @@ div.button:hover {
   padding: 16px;
   align-self: center;
   background-color: #181818;
-  height: 100%;
+  flex: 1 1 auto;
 }
 
 a {

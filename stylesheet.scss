@@ -42,7 +42,8 @@ div.button:hover{
 	padding: 16px;
 	align-self: center;
 	background-color: $med-gray;
-	height: 100%;
+	// from https://stackoverflow.com/a/24979148
+	flex: 1 1 auto;
 }
 a{
 	text-decoration: none;
