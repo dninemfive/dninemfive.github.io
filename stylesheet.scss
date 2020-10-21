@@ -1,10 +1,10 @@
 $light-gray: #625e5d;
-$med-gray: #3b3938;
+$med-gray: #181818;
 $dark-gray: #141414;
 
 html {
 	font-size: 18px;
-	background-color: $med-gray;
+	background-color: $dark-gray;
 	color: $light-gray;
 	font-family: 'Vollkorn', serif;
 }
@@ -32,14 +32,14 @@ div.button:hover{
 }
 .flex{
 	display: flex;
-	flex-direction: column;
-	height: 100vh;
+	flex-direction: column;	
 }
 .flex > div{
 	width: 900px;
 	padding: 16px;
 	align-self: center;
-	background-color: $dark-gray;
+	background-color: $med-gray;
+	height: 100vh;
 }
 a{
 	text-decoration: none;

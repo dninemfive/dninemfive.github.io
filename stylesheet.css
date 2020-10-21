@@ -1,6 +1,6 @@
 html {
   font-size: 18px;
-  background-color: #3b3938;
+  background-color: #141414;
   color: #625e5d;
   font-family: "Vollkorn", serif;
 }
@@ -34,14 +34,14 @@ div.button:hover {
 .flex {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .flex > div {
   width: 900px;
   padding: 16px;
   align-self: center;
-  background-color: #141414;
+  background-color: #181818;
+  height: 100vh;
 }
 
 a {
