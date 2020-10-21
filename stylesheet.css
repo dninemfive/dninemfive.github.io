@@ -3,6 +3,7 @@ html {
   background-color: #141414;
   color: #625e5d;
   font-family: "Vollkorn", serif;
+  height: 100%;
 }
 
 body {
@@ -31,9 +32,10 @@ div.button:hover {
   background-color: #F78300;
 }
 
-.flex {
+.flex-body {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .flex > div {
