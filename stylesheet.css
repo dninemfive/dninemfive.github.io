@@ -1,49 +1,66 @@
 html {
-	font-size: 18px;
-	background-color: #141414;
-	color: #625E5D;
-	font-family: 'Vollkorn', serif;
+  font-size: 18px;
+  background-color: #141414;
+  color: #625e5d;
+  font-family: "Vollkorn", serif;
 }
-.flex-header{
-	display: flex;
-	flex-direction: row;
-    justify-content: center;
-  	align-items: center;
-	background-color: #625E5D;
+
+body {
+  margin: 0px;
 }
-div.button{
-	min-width: 100px;
-    line-height: 20px;
-    color: #141414;
-    background-color: #625E5D;
-    padding: 8px;
-    margin: 0px;
-    text-align: center;
+
+.flex-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #625e5d;
 }
-div.button:hover{
-	background-color: #F78300;
+
+div.button {
+  min-width: 100px;
+  line-height: 20px;
+  color: #141414;
+  background-color: #625e5d;
+  padding: 8px;
+  margin: 0px;
+  text-align: center;
 }
-.flex{
-	display: flex;
-	flex-direction: column;
+
+div.button:hover {
+  background-color: #F78300;
 }
-.flex > div{
-	width: 900px;
-	padding: 16px;
-	align-self: center;
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  background-color: #3b3938;
 }
-a{
-	text-decoration: none;
+
+.flex > div {
+  width: 900px;
+  padding: 16px;
+  align-self: center;
 }
-a:link{
-	color: #F78300;
+
+a {
+  text-decoration: none;
 }
-a:visited{
-	color: #9F5400;
+
+a:link {
+  color: #F78300;
 }
-a:hover, a:focus{
-	text-decoration: underline;
+
+a:visited {
+  color: #9F5400;
 }
-h1, h2{
-	font-family: 'Open Sans', sans-serif;
+
+a:hover, a:focus {
+  text-decoration: underline;
 }
+
+h1, h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
