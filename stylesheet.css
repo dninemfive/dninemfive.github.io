@@ -1,7 +1,7 @@
 html {
   font-size: 18px;
   background-color: #141414;
-  color: #625e5d;
+  color: #aaaaaa;
   font-family: "Vollkorn", serif;
   height: 100%;
 }
@@ -16,14 +16,14 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #625e5d;
+  background-color: #aaaaaa;
 }
 
 div.button {
   min-width: 100px;
   line-height: 20px;
   color: #141414;
-  background-color: #625e5d;
+  background-color: #aaaaaa;
   padding: 8px;
   margin: 0px;
   text-align: center;
