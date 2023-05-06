@@ -14,13 +14,24 @@ html {
 body {
 	margin: 0px;
 	height: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.visual-header{
+	background-color: $light-gray;
+	align-self: stretch;
+	line-height: 50px;
+	display: flex;
 }
 .flex-header{
 	display: flex;
 	flex-direction: row;
     justify-content: left;
+	align-self: center;
   	align-items: left;
 	background-color: $light-gray;
+	width: 900px;
 }
 div.nav-item{
 	min-width: 100px;
