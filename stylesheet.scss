@@ -1,7 +1,8 @@
-$light-gray: #aaaaaa;
-$med-gray: #181818;
-$dark-gray: #141414;
+$light-gray: #aa9d92;
+$med-gray: #2b2825;
+$dark-gray: #1f1c1a;
 $orange: #ee6900;
+$dark-orange: #b04e00;
 
 html {
 	font-size: 18px;
@@ -31,7 +32,7 @@ div.button{
     text-align: center;
 }
 div.button:hover{
-	background-color: #F78300;
+	background-color: $orange;
 }
 .flex-body{
 	display: flex;
@@ -50,10 +51,10 @@ a{
 	text-decoration: none;
 }
 a:link{
-	color: #F78300;
+	color: $orange;
 }
 a:visited{
-	color: #9F5400;
+	color: $dark-orange;
 }
 a:hover, a:focus{
 	text-decoration: underline;

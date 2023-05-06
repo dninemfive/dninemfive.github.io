@@ -1,7 +1,7 @@
 html {
   font-size: 18px;
-  background-color: #141414;
-  color: #aaaaaa;
+  background-color: #1f1c1a;
+  color: #aa9d92;
   font-family: "Vollkorn", serif;
   height: 100%;
 }
@@ -16,21 +16,21 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #aaaaaa;
+  background-color: #aa9d92;
 }
 
 div.button {
   min-width: 100px;
   line-height: 20px;
-  color: #141414;
-  background-color: #aaaaaa;
+  color: #1f1c1a;
+  background-color: #aa9d92;
   padding: 8px;
   margin: 0px;
   text-align: center;
 }
 
 div.button:hover {
-  background-color: #F78300;
+  background-color: #ee6900;
 }
 
 .flex-body {
@@ -43,7 +43,7 @@ div.button:hover {
   width: 900px;
   padding: 16px;
   align-self: center;
-  background-color: #181818;
+  background-color: #2b2825;
   flex: 1 1 auto;
 }
 
@@ -52,11 +52,11 @@ a {
 }
 
 a:link {
-  color: #F78300;
+  color: #ee6900;
 }
 
 a:visited {
-  color: #9F5400;
+  color: #b04e00;
 }
 
 a:hover, a:focus {
