@@ -14,12 +14,12 @@ body {
 .flex-header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   background-color: #aa9d92;
 }
 
-div.button {
+div.nav-item {
   min-width: 100px;
   line-height: 20px;
   color: #1f1c1a;
@@ -27,23 +27,33 @@ div.button {
   padding: 8px;
   margin: 0px;
   text-align: center;
+  border-left-style: solid;
+  border-left-color: #2b2825;
+  border-right-style: solid;
+  border-right-color: #2b2825;
 }
 
-div.button:hover {
-  background-color: #ee6900;
+div.nav-item-selected {
+  min-width: 100px;
+  line-height: 20px;
+  color: #aa9d92;
+  background-color: #2b2825;
+  padding: 8px;
+  margin: 0px;
+  text-align: center;
 }
 
 .flex-body {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-.flex-body > div {
   width: 900px;
   padding: 16px;
   align-self: center;
   background-color: #2b2825;
+}
+
+.flex-body > article {
   flex: 1 1 auto;
 }
 

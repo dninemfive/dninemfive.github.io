@@ -18,11 +18,11 @@ body {
 .flex-header{
 	display: flex;
 	flex-direction: row;
-    justify-content: center;
-  	align-items: center;
+    justify-content: left;
+  	align-items: left;
 	background-color: $light-gray;
 }
-div.button{
+div.nav-item{
 	min-width: 100px;
     line-height: 20px;
     color: $dark-gray;
@@ -30,20 +30,30 @@ div.button{
     padding: 8px;
     margin: 0px;
     text-align: center;
+	border-left-style: solid;
+	border-left-color: $med-gray;
+	border-right-style: solid;
+	border-right-color: $med-gray;
 }
-div.button:hover{
-	background-color: $orange;
+div.nav-item-selected{
+	min-width: 100px;
+    line-height: 20px;
+    color: $light-gray;
+    background-color: $med-gray;
+    padding: 8px;
+    margin: 0px;
+    text-align: center;
 }
 .flex-body{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-}
-.flex-body > div{
 	width: 900px;
 	padding: 16px;
 	align-self: center;
 	background-color: $med-gray;
+}
+.flex-body > article{	
 	// from https://stackoverflow.com/a/24979148
 	flex: 1 1 auto;
 }
