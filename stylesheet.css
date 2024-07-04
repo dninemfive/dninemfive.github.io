@@ -1,7 +1,7 @@
 html {
   font-size: 18px;
   background-color: #161312;
-  color: #342f2b;
+  color: #c5beb8;
   font-family: "Vollkorn", serif;
   height: 100%;
 }
@@ -21,7 +21,6 @@ body {
 }
 
 .visual-header > nav {
-  background: #342f2b;
   align-self: center;
   width: 50%;
   flex-direction: row;
@@ -30,18 +29,27 @@ body {
 }
 
 .nav-item, .nav-item-selected {
-  padding: 4px 24px;
-  background: #161312;
-  width: 20%;
-  height: 20px;
+  padding: 6px 24px;
+  margin-right: -5%;
+  background: #2f2a26;
+  width: 19%;
+  clip-path: polygon(7% 0%, 93% 0%, 100% 100%, 0% 100%);
+}
+.nav-item > div, .nav-item-selected > div {
+  margin: auto;
+  text-align: center;
+  color: #c5beb8;
 }
 .nav-item-selected {
   background: #48413b;
 }
 
-.nav-item > div, .nav-item-selected > div {
-  color: #c5beb8;
-  margin: auto;
+a.nav-item:hover, a.nav-item-selected:hover, a.nav-item:focus, a.nav-item-selected:focus {
+  background-color: #ee6900;
+  text-decoration: none;
+}
+a.nav-item:hover > div, a.nav-item-selected:hover > div, a.nav-item:focus > div, a.nav-item-selected:focus > div {
+  color: #161312;
 }
 
 main {
@@ -68,7 +76,7 @@ a:visited {
 }
 
 a:hover, a:focus {
-  background-color: #ee6900;
+  text-decoration: underline;
 }
 
 h1, h2 {
