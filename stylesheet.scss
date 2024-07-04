@@ -1,8 +1,13 @@
-$light-gray: #aa9d92;
-$med-gray: #2b2825;
-$dark-gray: #1f1c1a;
+@use 'sass:color'; /// https://sass-lang.com/documentation/modules/color/
+
 $orange: #ee6900;
-$dark-orange: #b04e00;
+$dark-orange: color.adjust($orange, $lightness: -28%);
+$med-gray: color.adjust($orange, $saturation: -90%, $lightness: -21%);
+$text-gray: color.adjust($med-gray, $lightness: 49%);
+$light-gray: color.adjust($med-gray, $lightness: 28%);
+$dark-gray: color.adjust($med-gray, $lightness: -18%);
+@debug "orange" $orange $dark-orange;
+@debug "gray" $text-gray $light-gray $med-gray $dark-gray;
 
 html {
 	font-size: 18px;
@@ -19,7 +24,7 @@ body {
 	flex-direction: column;
 }
 .visual-header {
-	background: $light-gray;
+	///background: $light-gray;
 	align-self: stretch;
 	flex-direction: column;
 	display: flex block;
@@ -29,7 +34,7 @@ body {
 	width: 50%;
 	flex-direction: row;
 	display: block flex;
-	margin: 0.5% 0 0 0;
+	margin: 0 0 0 0;
 }
 /// https://stackoverflow.com/a/31854299
 /// credit also goes to the incredibly cute emma🍞, who suggested clip-path in the first place.
@@ -39,39 +44,28 @@ body {
                    65% 0%,
                    100% 100%,
                    0% 100%);
-    background: #FF00FF;
+    background: $dark-gray;
 	width: 40px;
 	height: 20px;
+	&-selected {
+		@extend .nav-item;
+		background: $med-gray
+	}
 }
 .nav-item > div {
-	clip-path: inset(0% 0%,
-                   50% 0%,
-                   100% 100%,
-                   0% 100%);
-	background: #00FF00;
 	width: 36px;
 	height: 16px;
-}
-a.nav-item > div {
-	background: $light-gray;
-	color: $dark-gray;
+	color: $text-gray;
+	align-self: left;
 }
 main {
 	background: $med-gray;
-	color: $light-gray;
+	color: $text-gray;
 	width: 50%;
 	flex: 1 1 auto;
 }
-.test {
-  margin:100px auto;
-  clip-path: polygon(0% 0%,
-                   65% 0%,
-                   100% 100%,
-                   0% 100%);
-  border: solid red;
-}
 article {
-	padding: 4px 8px;
+	padding: 1% 2%;
 }
 a{
 	text-decoration: none;
@@ -83,7 +77,7 @@ a:visited{
 	color: $dark-orange;
 }
 a:hover, a:focus{
-	text-decoration: underline;
+	background-color: $orange;
 }
 h1, h2{
 	font-family: 'Open Sans', sans-serif;
