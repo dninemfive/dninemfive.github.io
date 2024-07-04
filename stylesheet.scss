@@ -18,55 +18,60 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-.visual-header{
-	background-color: $light-gray;
+.visual-header {
+	background: $light-gray;
 	align-self: stretch;
-	line-height: 50px;
-	display: flex;
-}
-.flex-header{
-	display: flex;
-	flex-direction: row;
-    justify-content: left;
-	align-self: center;
-  	align-items: left;
-	background-color: $light-gray;
-	width: 900px;
-}
-div.nav-item{
-	min-width: 100px;
-    line-height: 20px;
-    color: $dark-gray;
-    background-color: $light-gray;
-    padding: 8px;
-    margin: 0px;
-    text-align: center;
-	border-left-style: solid;
-	border-left-color: $med-gray;
-	border-right-style: solid;
-	border-right-color: $med-gray;
-}
-div.nav-item-selected{
-	min-width: 100px;
-    line-height: 20px;
-    color: $light-gray;
-    background-color: $med-gray;
-    padding: 8px;
-    margin: 0px;
-    text-align: center;
-}
-.flex-body{
-	display: flex;
 	flex-direction: column;
-	height: 100%;
-	width: 900px;
-	padding: 16px;
-	align-self: center;
-	background-color: $med-gray;
+	display: flex block;
 }
-.flex-body > article{	
-	// from https://stackoverflow.com/a/24979148
+.visual-header > nav {
+	align-self: center;
+	width: 50%;
+	flex-direction: row;
+	display: block flex;
+	margin: 0.5% 0 0 0;
+}
+/// https://stackoverflow.com/a/31854299
+/// credit also goes to the incredibly cute emma🍞, who suggested clip-path in the first place.
+.nav-item {
+	padding: 4px 24px;
+	clip-path: polygon(0% 0%,
+                   65% 0%,
+                   100% 100%,
+                   0% 100%);
+    background: #FF00FF;
+	width: 40px;
+	height: 20px;
+}
+.nav-item > div {
+	clip-path: inset(0% 0%,
+                   50% 0%,
+                   100% 100%,
+                   0% 100%);
+	background: #00FF00;
+	width: 36px;
+	height: 16px;
+}
+a.nav-item > div {
+	background: $light-gray;
+	color: $dark-gray;
+}
+main {
+	background: $med-gray;
+	color: $light-gray;
+	width: 50%;
 	flex: 1 1 auto;
+}
+.test {
+  margin:100px auto;
+  clip-path: polygon(0% 0%,
+                   65% 0%,
+                   100% 100%,
+                   0% 100%);
+  border: solid red;
+}
+article {
+	padding: 4px 8px;
 }
 a{
 	text-decoration: none;

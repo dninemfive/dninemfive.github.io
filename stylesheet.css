@@ -15,58 +15,55 @@ body {
 }
 
 .visual-header {
-  background-color: #aa9d92;
+  background: #aa9d92;
   align-self: stretch;
-  line-height: 50px;
-  display: flex;
-}
-
-.flex-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-self: center;
-  align-items: left;
-  background-color: #aa9d92;
-  width: 900px;
-}
-
-div.nav-item {
-  min-width: 100px;
-  line-height: 20px;
-  color: #1f1c1a;
-  background-color: #aa9d92;
-  padding: 8px;
-  margin: 0px;
-  text-align: center;
-  border-left-style: solid;
-  border-left-color: #2b2825;
-  border-right-style: solid;
-  border-right-color: #2b2825;
-}
-
-div.nav-item-selected {
-  min-width: 100px;
-  line-height: 20px;
-  color: #aa9d92;
-  background-color: #2b2825;
-  padding: 8px;
-  margin: 0px;
-  text-align: center;
-}
-
-.flex-body {
-  display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 900px;
-  padding: 16px;
-  align-self: center;
-  background-color: #2b2825;
+  display: flex block;
 }
 
-.flex-body > article {
+.visual-header > nav {
+  align-self: center;
+  width: 50%;
+  flex-direction: row;
+  display: block flex;
+  margin: 0.5% 0 0 0;
+}
+
+.nav-item {
+  padding: 4px 24px;
+  clip-path: polygon(0% 0%, 65% 0%, 100% 100%, 0% 100%);
+  background: #FF00FF;
+  width: 40px;
+  height: 20px;
+}
+
+.nav-item > div {
+  clip-path: inset(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+  background: #00FF00;
+  width: 36px;
+  height: 16px;
+}
+
+a.nav-item > div {
+  background: #aa9d92;
+  color: #1f1c1a;
+}
+
+main {
+  background: #2b2825;
+  color: #aa9d92;
+  width: 50%;
   flex: 1 1 auto;
+}
+
+.test {
+  margin: 100px auto;
+  clip-path: polygon(0% 0%, 65% 0%, 100% 100%, 0% 100%);
+  border: solid red;
+}
+
+article {
+  padding: 4px 8px;
 }
 
 a {
