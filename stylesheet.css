@@ -1,7 +1,7 @@
 html {
   font-size: 18px;
   background-color: #161312;
-  color: #95877d;
+  color: #342f2b;
   font-family: "Vollkorn", serif;
   height: 100%;
 }
@@ -21,6 +21,7 @@ body {
 }
 
 .visual-header > nav {
+  background: #342f2b;
   align-self: center;
   width: 50%;
   flex-direction: row;
@@ -30,9 +31,8 @@ body {
 
 .nav-item, .nav-item-selected {
   padding: 4px 24px;
-  clip-path: polygon(0% 0%, 65% 0%, 100% 100%, 0% 100%);
   background: #161312;
-  width: 40px;
+  width: 20%;
   height: 20px;
 }
 .nav-item-selected {
@@ -40,10 +40,8 @@ body {
 }
 
 .nav-item > div, .nav-item-selected > div {
-  width: 36px;
-  height: 16px;
   color: #c5beb8;
-  align-self: left;
+  margin: auto;
 }
 
 main {

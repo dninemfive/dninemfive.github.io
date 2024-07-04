@@ -4,7 +4,7 @@ $orange: #ee6900;
 $dark-orange: color.adjust($orange, $lightness: -28%);
 $med-gray: color.adjust($orange, $saturation: -90%, $lightness: -21%);
 $text-gray: color.adjust($med-gray, $lightness: 49%);
-$light-gray: color.adjust($med-gray, $lightness: 28%);
+$nav-gray: color.adjust($med-gray, $lightness: -7%);
 $dark-gray: color.adjust($med-gray, $lightness: -18%);
 @debug "orange" $orange $dark-orange;
 @debug "gray" $text-gray $light-gray $med-gray $dark-gray;
@@ -24,12 +24,12 @@ body {
 	flex-direction: column;
 }
 .visual-header {
-	///background: $light-gray;
 	align-self: stretch;
 	flex-direction: column;
 	display: flex block;
 }
 .visual-header > nav {
+	background: $nav-gray;
 	align-self: center;
 	width: 50%;
 	flex-direction: row;
@@ -40,12 +40,8 @@ body {
 /// credit also goes to the incredibly cute emma🍞, who suggested clip-path in the first place.
 .nav-item {
 	padding: 4px 24px;
-	clip-path: polygon(0% 0%,
-                   65% 0%,
-                   100% 100%,
-                   0% 100%);
     background: $dark-gray;
-	width: 40px;
+	width: 20%;
 	height: 20px;
 	&-selected {
 		@extend .nav-item;
@@ -53,10 +49,8 @@ body {
 	}
 }
 .nav-item > div {
-	width: 36px;
-	height: 16px;
 	color: $text-gray;
-	align-self: left;
+	margin: auto;
 }
 main {
 	background: $med-gray;
