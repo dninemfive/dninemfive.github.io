@@ -29,11 +29,13 @@ body {
 }
 
 .nav-item, .nav-item-selected {
-  padding: 6px 24px;
-  margin-right: -5%;
+  padding: 4px 4px;
+  box-sizing: border-box;
+  margin-right: -1.5%;
   background: #2f2a26;
-  width: 19%;
+  width: 21.1822660099%;
   clip-path: polygon(7% 0%, 93% 0%, 100% 100%, 0% 100%);
+  filter: drop-shadow(30px 100px black);
 }
 .nav-item > div, .nav-item-selected > div {
   margin: auto;

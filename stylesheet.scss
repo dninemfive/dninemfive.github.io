@@ -38,12 +38,20 @@ body {
 /// https://stackoverflow.com/a/31854299
 /// credit also goes to the incredibly cute emma🍞, who suggested clip-path in the first place.
 /// overlapping: https://www.w3schools.com/css/tryit.asp?filename=trycss_zindex3
+$folder-overlap: -1.5%;
+$num-tabs: 5;
+$tab-width-target: percentage(calc(1 / $num-tabs));
+$tab-width-divisor: calc(100% - $folder-overlap);
+$final-tab-width: percentage(calc(($tab-width-target - $folder-overlap) / $tab-width-divisor));
+@debug $tab-width-target $tab-width-divisor $final-tab-width;
 .nav-item {
-	padding: 6px 24px;
-	margin-right: -5%;
+	padding: 4px 4px;
+	box-sizing: border-box;
+	margin-right: $folder-overlap;
     background: $nav-gray;
-	width: 19%;
+	width: $final-tab-width;
 	clip-path: polygon(7% 0%, 93% 0%, 100% 100%, 0% 100%);
+	filter: drop-shadow(30px 100px black);
 	> div {
 		margin: auto;
 		text-align: center;
